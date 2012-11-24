@@ -1,4 +1,4 @@
-var Employee = function() {
+exports.Employee = function() {
   this.id = null;
   this.firstName = null;
   this.lastName = null;
@@ -9,7 +9,7 @@ var Employee = function() {
   this.clients = [];
 };
 
-var Client = function() {
+exports.Client = function() {
   this.id = null;
   this.name = null;
   this.address = null;
@@ -17,29 +17,23 @@ var Client = function() {
   this.payrollPeriods = [];
 };
 
-var PayrollPeriod = function() {
+exports.PayrollPeriod = function() {
   this.id = null;
   this.clientId = null;
   this.fromDate = null;
   this.toDate = null;
 };
 
-var Payment = function() {
+exports.Payment = function() {
   this.id = null;
   this.payrollPeriodId = null;
   this.type = null;
   this.valyu = null;
 };
 
-var Deduction = function() {
+exports.Deduction = function() {
   this.id = null;
   this.payrollPeriodId = null;
   this.type = null;
   this.valyu = null;
 };
-
-exports.Employee = Employee;
-exports.Client = Client;
-exports.PayrollPeriod = PayrollPeriod;
-exports.Payment = Payment;
-exports.Deduction = Deduction;
